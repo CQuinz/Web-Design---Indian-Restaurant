@@ -254,6 +254,24 @@ textarea{
 	margin: 5px;
 }
 
+/* carousel ------------ */
+
+.slider {
+  margin: 10px 0;
+  width: 1100px; /* Update to your slider width */
+  height: 400px; /* Update to your slider height */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+  display: none;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  
+}/* carousel end ------ */	
+
 
 /*FOOTER SECTION*/
 #footerNavbar {

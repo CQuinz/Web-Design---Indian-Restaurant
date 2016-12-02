@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 <!--  <link rel="stylesheet" href="css/reset.css" type="text/css">-->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>
   </head>
   <body>
   	
@@ -29,8 +31,7 @@
 				<input type="text" placeholder="Search" id="searchBar">
 				<button id="searchButton">Search</button>
   			</div>
-  			
-  			<footer class="clear"></footer>
+  			  			<footer class="clear"></footer>
   		</div><!--End of container-->
   		
   	</section><!--End of siteIdUtilities-->
@@ -38,9 +39,16 @@
   	<!--SLIDESHOW SECTION-->
   	<section id="header">
   	
-  		<img src="" height="350px">
-  		
-  		
+  		  		
+  		<div id="carousel">
+	  			<ul class="slider">
+		  			<li><img src="img/carosel1.jpg" /></li>
+		  			<li><img src="img/carosel2.jpg" /></li>
+		  			<li><img src="img/carosel3.jpg" /></li>
+		  			<li><img src="img/carosel4.jpg" /></li>
+	  			</ul>
+  			</div>
+
   	</section><!--End of Header-->
   	
   	<!--NAVIGATION SECTION-->
@@ -176,8 +184,8 @@
   	
   	<footer id="footer">
   	  <nav id="footerNavbar">
-  		<div class="container">
-  			<ul>
+  		<div id="carousel">
+  			<ul id="carousel">
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
   				<li><a href="">Reservation</a></li>
@@ -191,5 +199,6 @@
   	</footer><!--End of footer-->
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

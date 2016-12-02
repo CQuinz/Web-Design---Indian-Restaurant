@@ -19,10 +19,11 @@ body{
 
 .sectionGrey{
 	padding-top: 40px;
-	background-color: #ded9d9;
+	background-color: #df9827;
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 	margin-bottom: 30px;
+	
 	
 }
 
@@ -72,12 +73,16 @@ body{
 /*TEXT STYLING*/
 
 h1{
-	font-size: 20px;
+	font-size: 16px;
+	text-transform:uppercase;
 	margin: 0px;
+	color: #da8908;
 }
 
 h2{
 	font-size: 40px;
+	
+	
 }
 
 h3{
@@ -88,6 +93,13 @@ h3{
 h2, h3 {
 	text-align: center;
 	margin: 15px 0px 15px 0px;
+}
+
+h4{
+	text-align: center;
+	font-size: 15px;
+	line-height:25px;
+	font-style: italic;
 }
 
 p{
@@ -101,15 +113,20 @@ p{
 
 /*HERO SECTION*/
 
-#hero{
-	height: 350px;
+#hero {
+	height: 500px;
 	text-align: center;
+	background: url("../images/carosel2.jpg") no-repeat center fixed;
+	background-size: cover;
+	
+	
 }
 
 #hero h2{
-	line-height: 150px;
-	
-	font-size: 60px;
+	line-height: 750px;
+	color: #da8908;
+	font-size: 80px;
+	text-shadow: 1px 1px 1px black;
 }
 
 #hero li a{
@@ -127,6 +144,8 @@ p{
 #siteidUtilitiesBar{
 	margin:0px auto;
 	text-align: center;
+	height: 50px;
+	line-height:60px;
 	
 	
 
@@ -143,6 +162,7 @@ p{
 
 #logo {
 	float: left;
+	
 }
 
 #breadCrumbs{
@@ -161,7 +181,8 @@ p{
 /*NAVIGATION*/
 
 #navbar {
-	background-color: #242121;
+	background-color: #db2a0d;
+	//background-color: #da8908;
 	//height:20px;
 	padding: 5px 0px;
 	margin: 0 auto;

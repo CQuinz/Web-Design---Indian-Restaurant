@@ -19,7 +19,7 @@ body{
 
 .sectionGrey{
 	padding-top: 40px;
-	background-color: #df9827;
+	background-color: #FFEF91;
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 	margin-bottom: 30px;
@@ -66,6 +66,7 @@ body{
 	padding-right: 15px;
 	
 }
+
 
 .clear{
 	clear: both;
@@ -182,7 +183,7 @@ p{
 /*NAVIGATION*/
 
 #navbar {
-	background-color: #db2a0d;
+	background-color: #B2123D;
 	//background-color: #da8908;
 	//height:20px;
 	padding: 5px 0px;
@@ -213,7 +214,7 @@ a:hover{
 /*OPENING HOURS SECTION*/
 
 #openingHours{
-	background-color: #333333;
+	background-color: #B2123D;
 	padding-top: 40px;
 	color: #f2f2f2;
 }

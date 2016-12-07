@@ -20,17 +20,18 @@
    	
   	<section id="siteidUtilitiesBar">
   		<div class="container">
-  		  
-  			<div class="utilities-left">
-  			  <img id="logo" src="images/">
-  			
-  				  <h1>The Big Indian Restaurant</h1>
+  			<div class="utilities">
+  			<img id="logo" src="images/">
+  			</div>
+  			<div class="utilities">
+  				<h1>The Big Indian Restaurant</h1>
   				</div>
-  				
-  			<div class="utilities-right">
-				  <p id="breadCrumbs"><a href="">Home>></a></p>
-				  <input type="text" placeholder="Search" id="searchBar">
-				  <button id="searchButton">Search</button>
+  				<div class="utilities">
+				<p id="breadCrumbs"><a href="">Breadcrumbs>></a></p>
+				<div class="search">
+					<input type="text" placeholder="Search" id="searchBar">
+					<button id="searchButton">Search</button>
+  				</div>
   			</div>
   			  			<footer class="clear"></footer>
   		</div><!--End of container-->
@@ -190,7 +191,7 @@
   			<ul id="carousel">
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
-  				<li id="reservationBtn"><a href="#">Reservation</a></li>
+  				<li><a href="">Reservation</a></li>
   				<li><a href="about.html">About</a></li>
   				<li><a href="contact.html">Contact</a></li>
   				
@@ -198,103 +199,7 @@
   			
   		</div>
   		
-  <!--  MODAL RESERVATION FORM -->
-  		
-  
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">x</span>
-    	<!--CONTACT FORM SECTION-->
-  	
-  	<section id="contactForm" class="container">
-  	
-  	<h2>Drop us a Line</h2>
-  		
-  		<div class="column1 ">
-  		  <form>
-  		    <fieldset>
-  		      
-  		      
-  		      <!--JAVASCRIPT ERROR MESSAGES (Hidden input field) -->
-  		      <ul>
-  		        <li></li>  
-  		      </ul>
-  		      <!--end of JAVASCRIPT ERROR MESSAGES-->
-  		      
-  		      <p>Please enter your details below</p>
-  		      
-    		    <label>Name: </label>
-    		    <input type="text" name="name" id="name">
-    		    
-    		    <!--JAVASCRIPT NAME (Hidden input field) -->
-    		    <label>Confirm Name: </label>
-    		    <input type="text" name="confirmName" id="confirnName">
-    		    <!--end of JAVASCRIPT NAME  -->
-    		    
-    		    <br>
-    		    <label>Email: </label>
-    		    <input type="email" name="email" id="email">
-    		    
-    		    <!--JAVASCRIPT CONFIRM EMAIL (Hidden input field) -->
-    		    <label>Confirm Email: </label>
-    		    <input type="email" name="confirmEmail" id="confirnEmail">
-    		    <!--end of JAVASCRIPT CONFIRM EMAIL  -->
-    		    
-    		    <br>
-    		    <label>Telephone No: </label>
-    		    <input type="text" name="telephone" id="telephone">
-    		    
-    		    <br>
-    		    <label>Have you ever been to our restaurant before?: </label>
-    		    <select name="previousVisitor">
-    		      <option value="yes" id="visitYes">Yes</option>
-    		      <option value="no" id="visitNo">No</option>
-    		    </select>
-    		    
-    		    <!--JAVASCRIPT RATE EXPERIENCE (Hidden input field) -->
-    		    <br>
-    		    <label>How would you rate your experience?: </label>
-    		    <select name="rateExperience">
-    		      <option value="Amazing" id="amazing">Amazing. Five Stars!!</option>
-    		      <option value="veryGood" id="veryGood">Very Good. Four Stars!</option>
-    		      <option value="Good" id="good">Good. Three Stars!!</option>
-    		      <option value="Poor" id="poor">Poor. Two Stars.</option>
-    		      <option value="Bad" id="bad">Bad. One Star.</option>
-    		    </select>
-    		    <!--end of JAVASCRIPT RATE EXPERIENCE  -->
-    		    
-    		    <br>
-    		    <label>Your question: </label>
-    		    <br>
-    		    <textarea name="yourQuestion">
-            </textarea>
-            
-            <br>
-            <label>Would you like to be added to our monthly email newsletter?</label>
-            <input type="checkbox" name="addMe">Yes
-            <br>
-            <button name="submitQuestion" id="submitQuestion">Submit Your Question</button>
-          </fieldset>
-  		  </form>
-  			
-  		</div><!---->
-  		
-  		
-  		
-  	  <footer class="clear"></footer>
-  		
-  	</section><!--End of contact form section-->
-  	
-  </div><!--end of modal content-->
-
-</div><!--end of modal background-->
-
-  		
   	</footer><!--End of footer-->
-  	
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>

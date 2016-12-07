@@ -8,6 +8,26 @@ body{
 	margin: 0px;
 }
 
+/* style header elements */
+
+#searchBar{
+
+	padding: 5px;
+}
+#searchButton{
+	padding: 5px;
+	
+	color:white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+}
+#breadCrumb a {
+	background-color: grey;
+}
+
+/* header element */
+
 /*LAYOUT*/
 
 .container{
@@ -158,16 +178,13 @@ p{
 	width: 40%;
 	float: left;
 	//display: inline-block;
-<<<<<<< HEAD
-=======
-	
 }
 
 .utilities-right{
 	width: 40%;
 	float: right;
 	//display: inline-block;
->>>>>>> 45da81b190ce8a50d5bfbd665e62e096b4b8c124
+
 	
 }
 

@@ -159,7 +159,10 @@ p{
 	display: inline-block;
 	
 }
-
+#header{
+	width: 1100px;
+	margin: 0 auto;
+}
 
 
 #logo {
@@ -301,8 +304,9 @@ fieldset button{
   position: absolute; 
   top: 0; 
   left: 0; 
-  
-}/* carousel end ------ */	
+ 
+}
+/* carousel end ------ */	
 
 
 

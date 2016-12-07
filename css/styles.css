@@ -11,8 +11,9 @@ body{
 /*LAYOUT*/
 
 .container{
-	width: 70%;
-	max-width: 1200px;
+	//width: 80%;
+	//max-width: 1200px;
+	padding:0% 10%;
 	margin: 0px auto;
 	
 }
@@ -125,9 +126,9 @@ p{
 }
 
 #hero h2{
-	line-height: 750px;
+	line-height: 250px;
 	color: #da8908;
-	font-size: 80px;
+	font-size: 60px;
 	text-shadow: 1px 1px 1px black;
 }
 
@@ -147,16 +148,23 @@ p{
 	margin:0px auto;
 	text-align: center;
 	height: 50px;
-	line-height:60px;
+	line-height:50px;
 	
 	
 
 }
 
-.utilities{
-	width: 33.3%;
+.utilities-left{
+	width: 40%;
 	float: left;
-	display: inline-block;
+	//display: inline-block;
+	
+}
+
+.utilities-right{
+	width: 40%;
+	float: right;
+	//display: inline-block;
 	
 }
 #header{
@@ -308,6 +316,45 @@ fieldset button{
 }
 /* carousel end ------ */	
 
+/*STYLE FOR RESERVATION MODAL WINDOW*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /*FOOTER SECTION*/

@@ -158,6 +158,16 @@ p{
 	width: 40%;
 	float: left;
 	//display: inline-block;
+<<<<<<< HEAD
+=======
+	
+}
+
+.utilities-right{
+	width: 40%;
+	float: right;
+	//display: inline-block;
+>>>>>>> 45da81b190ce8a50d5bfbd665e62e096b4b8c124
 	
 }
 
@@ -318,6 +328,11 @@ fieldset button{
 
 /*STYLE FOR RESERVATION MODAL WINDOW*/
 
+<<<<<<< HEAD
+=======
+/*STYLE FOR RESERVATION MODAL WINDOW*/
+
+>>>>>>> 45da81b190ce8a50d5bfbd665e62e096b4b8c124
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

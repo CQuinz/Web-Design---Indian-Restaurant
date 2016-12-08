@@ -14,14 +14,7 @@ body{
 
 	padding: 5px;
 }
-#searchButton{
-	padding: 5px;
-	
-	color:white;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 15px;
-}
+
 #breadCrumb a {
 	background-color: grey;
 }

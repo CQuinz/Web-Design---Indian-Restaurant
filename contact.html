@@ -104,57 +104,37 @@
   		      
   		      <p>Please enter your details below</p>
   		      
-    		    <label>Name: </label>
+    		  <div class="fgroup"> 
+    		    <label for="name">Name: </label>
     		    <input type="text" name="name" id="name">
-    		    
-    		    <!--JAVASCRIPT NAME (Hidden input field) -->
-    		    <label>Confirm Name: </label>
-    		    <input type="text" name="confirmName" id="confirnName">
-    		    <!--end of JAVASCRIPT NAME  -->
-    		    
-    		    <br>
-    		    <label>Email: </label>
+    		  </div>  
+    		       		    
+    		   <div class="fgroup">
+    		    <label for="email">Email: </label>
     		    <input type="email" name="email" id="email">
-    		    
-    		    <!--JAVASCRIPT CONFIRM EMAIL (Hidden input field) -->
-    		    <label>Confirm Email: </label>
-    		    <input type="email" name="confirmEmail" id="confirnEmail">
-    		    <!--end of JAVASCRIPT CONFIRM EMAIL  -->
-    		    
-    		    <br>
-    		    <label>Telephone No: </label>
+    		   </div>
+    		        		    
+    		    <div class="fgroup">
+    		    <label for="telephone">Telephone No: </label>
     		    <input type="text" name="telephone" id="telephone">
-    		    
-    		    <br>
-    		    <label>Have you ever been to our restaurant before?: </label>
-    		    <select name="previousVisitor">
-    		      <option value="yes" id="visitYes">Yes</option>
-    		      <option value="no" id="visitNo">No</option>
-    		    </select>
-    		    
-    		    <!--JAVASCRIPT RATE EXPERIENCE (Hidden input field) -->
-    		    <br>
-    		    <label>How would you rate your experience?: </label>
-    		    <select name="rateExperience">
-    		      <option value="Amazing" id="amazing">Amazing. Five Stars!!</option>
-    		      <option value="veryGood" id="veryGood">Very Good. Four Stars!</option>
-    		      <option value="Good" id="good">Good. Three Stars!!</option>
-    		      <option value="Poor" id="poor">Poor. Two Stars.</option>
-    		      <option value="Bad" id="bad">Bad. One Star.</option>
-    		    </select>
-    		    <!--end of JAVASCRIPT RATE EXPERIENCE  -->
-    		    
-    		    <br>
-    		    <label>Your question: </label>
-    		    <br>
-    		    <textarea name="yourQuestion">
+    		    </div> 
+    		   
+    		     
+    		    <label>Your Comments:</label>
+    		   <div class="fgroup"> 
+    		    <textarea id="comments" name="yourQuestion" cols="20" rows="10">
             </textarea>
             
-            <br>
+    		</div>
+    		<br>
+    		<div class="fgroup">
             <label>Would you like to be added to our monthly email newsletter?</label>
             <input type="checkbox" name="addMe">Yes
-            <br>
-            <button name="submitQuestion" id="submitQuestion">Submit Your Question</button>
+    		</div>
+    		<br>
+    		<div>
+            <button name="submitQuestion" id="submitQuestion">Submit Question</button>
+    		</div>
           </fieldset>
   		  </form>
   			

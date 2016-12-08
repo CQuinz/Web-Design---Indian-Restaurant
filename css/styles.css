@@ -137,7 +137,7 @@ p{
 /*HERO SECTION*/
 
 #hero {
-	height: 500px;
+	height: 400px;
 	text-align: center;
 	background: url("../images/carosel2.jpg") no-repeat center fixed;
 	background-size: cover;
@@ -302,23 +302,42 @@ fieldset{
 	border-radius: 5px;
 	background-color: #ad210a;
 	color: white;
+	padding: 20px;
 	
 }
 
-input, select{
-	margin: 10px 15px 10px 0px;
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
+#submitQuestion {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    float: left;
+}
+#comments{
+	width: 100%;
+	margin-right: 10px;
+}
 label{
 	margin: 5px;
-}
-textarea{
-	width: 80%;
-	margin: 5px;
+	text-align: left;
+	float: left;
 }
 
 fieldset button{
-	margin: 15px 0px 30px 0px;
+	
 	padding: 5px;
 	font-weight: bold;
 }

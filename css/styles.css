@@ -334,6 +334,9 @@ fieldset button{
 	padding: 5px;
 	font-weight: bold;
 }
+#messageBox{
+	color: yellow;
+}
 
 
 /* carousel ------------ */

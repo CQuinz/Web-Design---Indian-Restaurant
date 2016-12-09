@@ -69,3 +69,40 @@ $( document ).ready(function() {
   }
   
 });
+
+function validation(){
+	var name,email,phone, message;
+	var fname,femail,fphone,fcomment;
+	 name = document.getElementById("name").value;
+	 email = document.getElementById("email").value;
+	 phone = document.getElementById("telephone").value;
+	 fname = document.getElementById("name");
+	  femail = document.getElementById("email");
+	   ftelephone = document.getElementById("telephone");
+	   fcomment = document.getElementById("comments");
+	 
+	if (name == "" || email == "" || phone==""){
+	
+	 fname.style.backgroundColor ="#ffffcc";
+	 femail.style.backgroundColor ="#ffffcc";
+	ftelephone.style.backgroundColor ="#ffffcc";
+	 fcomment.style.backgroundColor ="#ffffcc";
+	 
+	 message = "Please fill in the Blanks";
+	 
+	 
+	 
+	} else {
+	fname.style.backgroundColor ="#fff";
+	femail.style.backgroundColor ="#fff";
+	ftelephone.style.backgroundColor ="#fff";
+	fcomment.style.backgroundColor ="#fff";
+	message = "";
+	
+	}
+
+
+
+	document.getElementById("messageBox").innerHTML = message;
+}
+

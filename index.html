@@ -21,10 +21,10 @@
   	<section id="siteidUtilitiesBar">
   		<div class="container">
   			<div class="utilities-left">
-  			  <img id="logo" src="images/">
+  			 <a href="index.html"><img id="logo" src="images/bigindianrestaurantlogo.jpg"></a>
   			
-  				  <h1>The Big Indian Restaurant</h1>
-  				</div>
+  				  <h1><a href="index.html">The Big Indian Restaurant</a></h1>
+  			</div>
   				
   			<div class="utilities-right">
 				  <p id="breadCrumbs"><a href="">Home>> </a></p>
@@ -49,10 +49,25 @@
 		  		<!--	<li><img src="img/carosel2.jpg" /></li>-->
 		  		<!--	<li><img src="img/carosel3.jpg" /></li>-->
 		  		<!--	<li><img src="img/carosel4.jpg" /></li>-->
-	  			<li><a href="menu.html"><div id="sliderImage4" class="sliderBG"><h5 class="sliderText">See Our Menu</h5></div></a></li>
-	  			<!--<li><div id="sliderImage3" class="sliderBG"><h5>Opening Hours & Location</h5></div></li>-->
-	  			<li><a href="menu.html#specials"><div id="sliderImage2" class="sliderBG"><h5 class="sliderText">Check Out Our Deals</h5></div></a></li>
-	  			<li><a href="#location"><div id="sliderImage1" class="sliderBG"><h5 class="sliderText">Opening Hours & Location</h5></div></a></li>
+		  		
+	  			<li><a href="menu.html">
+	  			  <div id="sliderImage4" class="sliderBG">
+	  			    <h5 class="sliderText">See Our Menu</h5>
+	  			  </div></a>
+	  			</li>
+	  			
+	  			<li><a href="menu.html#specials">
+	  			  <div id="sliderImage2" class="sliderBG">
+	  			    <h5 class="sliderText">Check Out Our Deals</h5>
+	  			  </div></a>
+	  			</li>
+	  			  
+	  			<li><a href="#location">
+	  			  <div id="sliderImage1" class="sliderBG">
+	  			    <h5 class="sliderText">Opening Hours & Location</h5>
+	  			  </div></a>
+	  			</li>
+	  			
 	  			</ul><!--end of slider-->
 	  			
 	  			
@@ -68,7 +83,7 @@
   			  <div class="container">
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
-  				<li id="reservationBtn"><a href="">Reservation</a></li>
+  				<li id="reservationBtn"><a href="#">Reservation</a></li>
   				<li><a href="about.html">About</a></li>
   				<li><a href="contact.html">Contact</a></li>
   				<li class="icon">
@@ -196,67 +211,65 @@
   	
   	<footer id="footer">
   	  <nav id="footerNavbar">
-  		<div>
-  			<ul>
-  				<li><a href="index.html">Home</a></li>
-  				<li><a href="menu.html">Menu</a></li>
-  				<li class="reservationBtn"><a href="">Reservation</a></li>
-  				<li><a href="about.html">About</a></li>
-  				<li><a href="contact.html">Contact</a></li>
+  		  <div>
+  		  	<ul>
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="menu.html">Menu</a></li>
+    				
+    				<li><a href="about.html">About</a></li>
+    				<li><a href="contact.html">Contact</a></li>
   				
-  			</ul>
+  			  </ul>
   			
-  		</div>
+    		</div>
+  		
+  		</footer><!--End of footer-->
+  		
   		
   		<!--RESERVATION FORM MODAL WINDOW-->
   		
+    		<!--Please note this reservation for has no JS Validation
+    		    Due to time constraints - That is reserved for the contact form
+    		-->
+    		
   		<!-- The Modal -->
    <div id="myModal" class="modal">
 
   <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <!--CONTACT FORM SECTION-->
+      
   	
-  	<section id="contactForm" class="container">
   	
-  	<h2>Drop us a Line</h2>
+  	
+  	<h2>Make a Reservation</h2>
   		
   		<div class="column1 ">
   		  <form>
   		    <fieldset>
   		      
-  		      
-  		      <!--JAVASCRIPT ERROR MESSAGES (Hidden input field) -->
-  		      <ul>
-  		        <li></li>  
-  		      </ul>
-  		      <!--end of JAVASCRIPT ERROR MESSAGES-->
-  		      
   		      <p>Please enter your details below</p>
-  		      <div id="messageBox">
-	  		      <p id="message"></p>
-  		      </div>
+  		      
     		  <div class="fgroup"> 
     		    <label for="name">Name: </label>
-    		    <input type="text" name="name" id="name">
+    		    <input type="text" name="yourName" id="yourName">
     		  </div>  
     		       		    
     		   <div class="fgroup">
     		    <label for="email">Email: </label>
-    		    <input type="email" name="email" id="email">
+    		    <input type="email" name="emailAddress" id="emailAddress">
     		   </div>
     		        		    
     		    <div class="fgroup">
     		    <label for="telephone">Telephone No: </label>
-    		    <input type="text" name="telephone" id="telephone">
+    		    <input type="text" name="telephoneNo" id="telephoneNo">
     		    </div> 
     		   
     		     
-    		    <label>Your Comments:</label>
+    		    <label>Your Ideal Date & Time for booking:</label>
     		   <div class="fgroup"> 
-    		    <textarea id="comments" name="yourQuestion" cols="20" rows="10">
-            </textarea>
+    		    <input type ="datetime" name="dateTime" id="dateTime">
+            
             
     		</div>
     		<br>
@@ -266,7 +279,7 @@
     		</div>
     		<br>
     		<div>
-            <button type="button" name="submitQuestion" id="submitQuestion" onclick="validation()">Submit Question</button>
+            <button type="button" name="submitReservation" id="submitReservation">Submit Reservation</button>
     		</div>
           </fieldset>
   		  </form>
@@ -274,7 +287,7 @@
 
   </div><!--end of myModal-->
   		
-  	</footer><!--End of footer-->
+  	
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/script.js" type="text/javascript"></script>

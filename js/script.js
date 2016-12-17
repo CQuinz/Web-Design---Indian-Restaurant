@@ -56,16 +56,23 @@ $( document ).ready(function() {
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
   
+  var submitRes = document.getElementById("submitReservation");
+  
   // When the user clicks on the button, open the modal 
   btn.onclick = function() {
       modal.style.display = "block";
       //$('.slider').slider.pause;
-  }
+  };
   
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
       modal.style.display = "none";
-  }
+  };
+  
+  //when user clicks submit reservation close the window
+  submitRes.onclick = function() {
+      modal.style.display= "none";
+  };
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
@@ -79,6 +86,8 @@ $( document ).ready(function() {
   
   
 });
+
+// VALIDATION FUNCTION
 
 function validation(){
 	var name,email,phone, message;

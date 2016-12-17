@@ -35,14 +35,19 @@ $( document ).ready(function() {
       }
       , $transition_time +  $time_between_slides 
     );
+    
+    
+})
   
-  });
+  
   
   // JQUERY SCRIPT FOR RESERVATION FORM
   //source:(http://www.w3schools.com/howto/howto_css_modals.asp)
   
   
   // Get the modal
+  
+  
   var modal = document.getElementById('myModal');
   
   // Get the button that opens the modal
@@ -54,6 +59,7 @@ $( document ).ready(function() {
   // When the user clicks on the button, open the modal 
   btn.onclick = function() {
       modal.style.display = "block";
+      //$('.slider').slider.pause;
   }
   
   // When the user clicks on <span> (x), close the modal
@@ -66,7 +72,11 @@ $( document ).ready(function() {
       if (event.target == modal) {
           modal.style.display = "none";
       }
-  }
+  };
+  
+  
+  
+  
   
 });
 
@@ -105,4 +115,14 @@ function validation(){
 
 	document.getElementById("messageBox").innerHTML = message;
 }
+  
 
+//HAMBURGER MENU BUTTON - Responsive Design
+ function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

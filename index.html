@@ -27,11 +27,11 @@
   				</div>
   				
   			<div class="utilities-right">
-				  <p id="breadCrumbs"><a href="">Home>> </a> Menu</p>
+				  <p id="breadCrumbs"><a href="">Home>> </a></p>
 				  <input type="text" placeholder="Search" id="searchBar">
 				  <button id="searchButton">Search</button>
   			</div>
-  			  			<footer class="clear"></footer>
+  			
   			
   			<footer class="clear"></footer>
   		</div><!--End of container-->
@@ -48,26 +48,27 @@
 		  			<li><img src="img/carosel2.jpg" /></li>
 		  			<li><img src="img/carosel3.jpg" /></li>
 		  			<li><img src="img/carosel4.jpg" /></li>
-	  			</ul>
-  			</div>
+	  			</ul><!--end of slider-->
+  		</div><!--end of carosel-->
 
   	</section><!--End of Header-->
   	
+  	
   	<!--NAVIGATION SECTION-->
   	
-  	<nav id="navbar">
-  		<div class="container">
-  			<ul>
+  	
+  			<ul class="topnav" id="myTopnav">
+  			  <div class="container">
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
-  				<li><a href="">Reservation</a></li>
+  				<li id="reservationBtn"><a href="">Reservation</a></li>
   				<li><a href="about.html">About</a></li>
   				<li><a href="contact.html">Contact</a></li>
+  				<li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+          </div><!--end of container-->
   			</ul>
-  			
-  		</div>
-  		
-  	</nav><!--End of Nav-->
   	
   	<!--BEST DISHES SECTION-->
   	
@@ -187,17 +188,83 @@
   	
   	<footer id="footer">
   	  <nav id="footerNavbar">
-  		<div id="carousel">
-  			<ul id="carousel">
+  		<div>
+  			<ul>
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
-  				<li><a href="">Reservation</a></li>
+  				<li class="reservationBtn"><a href="">Reservation</a></li>
   				<li><a href="about.html">About</a></li>
   				<li><a href="contact.html">Contact</a></li>
   				
   			</ul>
   			
   		</div>
+  		
+  		<!--RESERVATION FORM MODAL WINDOW-->
+  		
+  		<!-- The Modal -->
+   <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!--CONTACT FORM SECTION-->
+  	
+  	<section id="contactForm" class="container">
+  	
+  	<h2>Drop us a Line</h2>
+  		
+  		<div class="column1 ">
+  		  <form>
+  		    <fieldset>
+  		      
+  		      
+  		      <!--JAVASCRIPT ERROR MESSAGES (Hidden input field) -->
+  		      <ul>
+  		        <li></li>  
+  		      </ul>
+  		      <!--end of JAVASCRIPT ERROR MESSAGES-->
+  		      
+  		      <p>Please enter your details below</p>
+  		      <div id="messageBox">
+	  		      <p id="message"></p>
+  		      </div>
+    		  <div class="fgroup"> 
+    		    <label for="name">Name: </label>
+    		    <input type="text" name="name" id="name">
+    		  </div>  
+    		       		    
+    		   <div class="fgroup">
+    		    <label for="email">Email: </label>
+    		    <input type="email" name="email" id="email">
+    		   </div>
+    		        		    
+    		    <div class="fgroup">
+    		    <label for="telephone">Telephone No: </label>
+    		    <input type="text" name="telephone" id="telephone">
+    		    </div> 
+    		   
+    		     
+    		    <label>Your Comments:</label>
+    		   <div class="fgroup"> 
+    		    <textarea id="comments" name="yourQuestion" cols="20" rows="10">
+            </textarea>
+            
+    		</div>
+    		<br>
+    		<div class="fgroup">
+            <label>Would you like to be added to our monthly email newsletter?</label>
+            <input type="checkbox" name="addMe">Yes
+    		</div>
+    		<br>
+    		<div>
+            <button type="button" name="submitQuestion" id="submitQuestion" onclick="validation()">Submit Question</button>
+    		</div>
+          </fieldset>
+  		  </form>
+    </div><!--end of modal-content-->
+
+  </div><!--end of myModal-->
   		
   	</footer><!--End of footer-->
   

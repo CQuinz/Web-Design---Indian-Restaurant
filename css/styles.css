@@ -127,6 +127,13 @@ p{
 	padding-right: 15px;
 }
 
+a{
+	text-decoration: none;
+	color:#B2123D;
+}
+
+
+
 /*HERO SECTION*/
 
 #hero {
@@ -392,12 +399,14 @@ fieldset button{
 /* carousel ------------ */
 
 .slider {
-  margin: 10px 0;
+  margin: 0px 0px;
   width: 1100px; /* Update to your slider width */
   height: 400px; /* Update to your slider height */
   position: relative;
   overflow: hidden;
 }
+
+
 
 .slider li {
   display: none;
@@ -405,6 +414,44 @@ fieldset button{
   top: 0; 
   left: 0; 
  
+}
+
+.sliderBG{
+	height: 400px;
+	padding:0px;
+	margin:0px;
+	text-align: center;
+	background-size: auto;
+	width: 1100px;
+	
+}
+#sliderImage1{
+	background: url("../images/carosel1.jpg") no-repeat center;
+	
+}
+
+#sliderImage2{
+	background: url("../images/carosel2.jpg") no-repeat center;
+	
+}
+
+#sliderImage3{
+	background: url("../images/carosel3.jpg") no-repeat center;
+	
+}
+
+#sliderImage4{
+	background: url("../images/carosel4.jpg") no-repeat center;
+	
+}
+
+.sliderText{
+	line-height: 500px;
+	margin: 0px;
+	padding:0px;
+	font-size:70px;
+	color:#da8908;
+	text-shadow: 2px 2px 2px black;
 }
 /* carousel end ------ */	
 

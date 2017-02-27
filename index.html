@@ -21,17 +21,17 @@
   	<section id="siteidUtilitiesBar">
   		<div class="container">
   			<div class="utilities-left">
-  			  <img id="logo" src="images/">
+  			 <a href="index.html"><img id="logo" src="images/bigindianrestaurantlogo.jpg"></a>
   			
-  				  <h1>The Big Indian Restaurant</h1>
-  				</div>
+  				  <h1><a href="index.html">The Big Indian Restaurant</a></h1>
+  			</div>
   				
   			<div class="utilities-right">
-				  <p id="breadCrumbs"><a href="">Home>> </a> Menu</p>
+				  <p id="breadCrumbs"><a href="">Home>> </a></p>
 				  <input type="text" placeholder="Search" id="searchBar">
 				  <button id="searchButton">Search</button>
   			</div>
-  			  			<footer class="clear"></footer>
+  			
   			
   			<footer class="clear"></footer>
   		</div><!--End of container-->
@@ -44,30 +44,53 @@
   		  		
   		<div id="carousel">
 	  			<ul class="slider">
-		  			<li><img src="img/carosel1.jpg" /></li>
-		  			<li><img src="img/carosel2.jpg" /></li>
-		  			<li><img src="img/carosel3.jpg" /></li>
-		  			<li><img src="img/carosel4.jpg" /></li>
-	  			</ul>
-  			</div>
+	  			  
+		  		<!--<li><img src="img/carosel1.jpg" /></li>-->
+		  		<!--	<li><img src="img/carosel2.jpg" /></li>-->
+		  		<!--	<li><img src="img/carosel3.jpg" /></li>-->
+		  		<!--	<li><img src="img/carosel4.jpg" /></li>-->
+		  		
+	  			<li><a href="menu.html">
+	  			  <div id="sliderImage4" class="sliderBG">
+	  			    <h5 class="sliderText">See Our Menu</h5>
+	  			  </div></a>
+	  			</li>
+	  			
+	  			<li><a href="menu.html#specials">
+	  			  <div id="sliderImage2" class="sliderBG">
+	  			    <h5 class="sliderText">Check Out Our Deals</h5>
+	  			  </div></a>
+	  			</li>
+	  			  
+	  			<li><a href="#location">
+	  			  <div id="sliderImage1" class="sliderBG">
+	  			    <h5 class="sliderText">Opening Hours & Location</h5>
+	  			  </div></a>
+	  			</li>
+	  			
+	  			</ul><!--end of slider-->
+	  			
+	  			
+  		</div><!--end of carosel-->
 
   	</section><!--End of Header-->
   	
+  	
   	<!--NAVIGATION SECTION-->
   	
-  	<nav id="navbar">
-  		<div class="container">
-  			<ul>
+  	
+  			<ul class="topnav" id="myTopnav">
+  			  <div class="container">
   				<li><a href="index.html">Home</a></li>
   				<li><a href="menu.html">Menu</a></li>
-  				<li><a href="">Reservation</a></li>
+  				<li id="reservationBtn"><a href="#">Reservation</a></li>
   				<li><a href="about.html">About</a></li>
   				<li><a href="contact.html">Contact</a></li>
+  				<li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+          </div><!--end of container-->
   			</ul>
-  			
-  		</div>
-  		
-  	</nav><!--End of Nav-->
   	
   	<!--BEST DISHES SECTION-->
   	
@@ -78,22 +101,23 @@
   		<h2>The Best Indian Dishes in Dublin</h2>
   		
   		<div class="column3">
-  			<h3>View Our Menu</h3>
+  		  
+  			<h3><a href="menu">View Our Menu</a></h3>
   			<p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat libero at facilisis. Quisque et facilisis lorem, at ultrices dui. Maecenas cursus, ex non efficitur vestibulum, ligula mi posuere libero, et malesuada diam odio sit amet risus. Pellentesque congue pharetra tortor sit amet faucibus. Sed lorem purus, blandit eget semper sed, rutrum vitae magna</p>
   			
-  			<img class="col-3-img" src="images/menu.jpg" alt="">
+  			<a href="menu.html"><img class="col-3-img" src="images/menu.jpg" alt=""></a>
   		</div><!--End of view our menu div-->
   		
   		<div class="column3">
-  			<h3>Book a Table</h3>
+  			<h3><a href= "" class="reservationBtn">Book a Table</a></h3>
   			<p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat libero at facilisis. Quisque et facilisis lorem, at ultrices dui. Maecenas cursus, ex non efficitur vestibulum, ligula mi posuere libero, et malesuada diam odio sit amet risus. Pellentesque congue pharetra tortor sit amet faucibus. Sed lorem purus, blandit eget semper sed, rutrum vitae magna</p>
-  			<img class="col-3-img" src="images/table.jpg" alt="">
+  			<a href= "" class="reservationBtn"><img class="col-3-img" src="images/table.jpg" alt=""></a>
   		</div><!--End of book a table div-->
   		
   		<div class="column3">
-  			<h3>See Our Deals</h3>
+  			<h3><a href= "menu.html#specials" >See Our Deals</a></h3>
   			<p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat libero at facilisis. Quisque et facilisis lorem, at ultrices dui. Maecenas cursus, ex non efficitur vestibulum, ligula mi posuere libero, et malesuada diam odio sit amet risus. Pellentesque congue pharetra tortor sit amet faucibus. Sed lorem purus, blandit eget semper sed, rutrum vitae magna.</p>
-  			<img class="col-3-img" src="images/deals.jpg" alt="">
+  		<a href= ""><img class="col-3-img" src="images/deals.jpg" alt=""></a>
   		</div><!--End of see our deals div-->
   		<footer class="clear"></footer>
   		</div>
@@ -187,19 +211,83 @@
   	
   	<footer id="footer">
   	  <nav id="footerNavbar">
-  		<div id="carousel">
-  			<ul id="carousel">
-  				<li><a href="index.html">Home</a></li>
-  				<li><a href="menu.html">Menu</a></li>
-  				<li><a href="">Reservation</a></li>
-  				<li><a href="about.html">About</a></li>
-  				<li><a href="contact.html">Contact</a></li>
+  		  <div>
+  		  	<ul>
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="menu.html">Menu</a></li>
+    				
+    				<li><a href="about.html">About</a></li>
+    				<li><a href="contact.html">Contact</a></li>
   				
-  			</ul>
+  			  </ul>
   			
-  		</div>
+    		</div>
   		
-  	</footer><!--End of footer-->
+  		</footer><!--End of footer-->
+  		
+  		
+  		<!--RESERVATION FORM MODAL WINDOW-->
+  		
+    		<!--Please note this reservation for has no JS Validation
+    		    Due to time constraints - That is reserved for the contact form
+    		-->
+    		
+  		<!-- The Modal -->
+   <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+  	
+  	
+  	
+  	<h2>Make a Reservation</h2>
+  		
+  		<div class="column1 ">
+  		  <form>
+  		    <fieldset>
+  		      
+  		      <p>Please enter your details below</p>
+  		      
+    		  <div class="fgroup"> 
+    		    <label for="name">Name: </label>
+    		    <input type="text" name="yourName" id="yourName">
+    		  </div>  
+    		       		    
+    		   <div class="fgroup">
+    		    <label for="email">Email: </label>
+    		    <input type="email" name="emailAddress" id="emailAddress">
+    		   </div>
+    		        		    
+    		    <div class="fgroup">
+    		    <label for="telephone">Telephone No: </label>
+    		    <input type="text" name="telephoneNo" id="telephoneNo">
+    		    </div> 
+    		   
+    		     
+    		    <label>Your Ideal Date & Time for booking:</label>
+    		   <div class="fgroup"> 
+    		    <input type ="datetime" name="dateTime" id="dateTime">
+            
+            
+    		</div>
+    		<br>
+    		<div class="fgroup">
+            <label>Would you like to be added to our monthly email newsletter?</label>
+            <input type="checkbox" name="addMe">Yes
+    		</div>
+    		<br>
+    		<div>
+            <button type="button" name="submitReservation" id="submitReservation">Submit Reservation</button>
+    		</div>
+          </fieldset>
+  		  </form>
+    </div><!--end of modal-content-->
+
+  </div><!--end of myModal-->
+  		
+  	
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/script.js" type="text/javascript"></script>

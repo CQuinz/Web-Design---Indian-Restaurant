@@ -24,8 +24,7 @@ body{
 /*LAYOUT*/
 
 .container{
-	//width: 80%;
-	//max-width: 1200px;
+	
 	padding:0% 10%;
 	margin: 0px auto;
 	
@@ -127,6 +126,13 @@ p{
 	padding-right: 15px;
 }
 
+a{
+	text-decoration: none;
+	color:#B2123D;
+}
+
+
+
 /*HERO SECTION*/
 
 #hero {
@@ -146,7 +152,19 @@ p{
 }
 
 #hero li a{
-	color: red;
+	color: #B2123D;
+	font-size: 20px;
+	font-weight: bold;
+	display:block;
+	padding: 20px 20px;
+	background-color: rgba(255, 255, 255,0.5);
+	//text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+}
+
+#hero li a:hover{
+	color: #da8908;
+	
 }
 
 
@@ -176,7 +194,7 @@ p{
 .utilities-right{
 	width: 40%;
 	float: right;
-	//display: inline-block;
+	/*display: inline-block;*/
 
 	
 }
@@ -184,7 +202,7 @@ p{
 .utilities-right{
 	width: 40%;
 	float: right;
-	//display: inline-block;
+	/*display: inline-block;*/
 	
 }
 #header{
@@ -195,6 +213,7 @@ p{
 
 #logo {
 	float: left;
+	height:40px;
 	
 }
 
@@ -215,12 +234,16 @@ p{
 
 #navbar {
 	background-color: #B2123D;
-	//background-color: #da8908;
-	//height:20px;
+	/*background-color: #da8908;*/
+	/*height:20px;*/
 	padding: 5px 0px;
 	margin: 0 auto;
 	
 }
+
+
+
+
 
 ul{
 	text-align: center;
@@ -241,6 +264,41 @@ ul li a{
 a:hover{
 	color: #42bcf4;
 }
+
+/*STYLING FOR TOPNAV (Hamburger Icon)*/
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B2123D;
+    
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	#float: left;
+	
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+  
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #8c0d2f;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
 
 /*OPENING HOURS SECTION*/
 
@@ -284,6 +342,15 @@ th, td {
 	text-align: center;
 	margin-bottom: 0px;
 	padding-bottom: 30px;
+}
+
+/*FOOTER SECTION*/
+#footerNavbar {
+	background-color: #242121;
+	//height:20px;
+	padding: 5px 0px;
+	margin: 0 auto;
+	
 }
 
 /*CONTACT FORM*/
@@ -339,15 +406,19 @@ fieldset button{
 }
 
 
+
+
 /* carousel ------------ */
 
 .slider {
-  margin: 10px 0;
+  margin: 0px 0px;
   width: 1100px; /* Update to your slider width */
   height: 400px; /* Update to your slider height */
   position: relative;
   overflow: hidden;
 }
+
+
 
 .slider li {
   display: none;
@@ -356,15 +427,52 @@ fieldset button{
   left: 0; 
  
 }
+
+.sliderBG{
+	height: 400px;
+	padding:0px;
+	margin:0px;
+	text-align: center;
+	background-size: auto;
+	width: 1100px;
+	
+}
+#sliderImage1{
+	background: url("../images/carosel1.jpg") no-repeat center;
+	
+}
+
+#sliderImage2{
+	background: url("../images/carosel2.jpg") no-repeat center;
+	
+}
+
+#sliderImage3{
+	background: url("../images/carosel3.jpg") no-repeat center;
+	
+}
+
+#sliderImage4{
+	background: url("../images/carosel4.jpg") no-repeat center;
+	
+}
+
+.sliderText{
+	line-height: 500px;
+	margin: 0px;
+	padding:0px;
+	font-size:70px;
+	letter-spacing: -2px;
+	color:#da8908;
+	text-shadow: 2px 2px 2px black;
+}
 /* carousel end ------ */	
 
+
+
 /*STYLE FOR RESERVATION MODAL WINDOW*/
 
-<<<<<<< HEAD
-=======
-/*STYLE FOR RESERVATION MODAL WINDOW*/
 
->>>>>>> 45da81b190ce8a50d5bfbd665e62e096b4b8c124
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -403,12 +511,102 @@ fieldset button{
     cursor: pointer;
 }
 
+/*MEDIA QUERIES*/
 
-/*FOOTER SECTION*/
-#footerNavbar {
-	background-color: #242121;
-	//height:20px;
-	padding: 5px 0px;
-	margin: 0 auto;
+@media only screen  and (max-width: 680px)
+{
+	/*.container{*/
+	/*	width: 94%;*/
+	/*	margin: 0% 3%;*/
+		
+	/*}*/
 	
+	.container{
+		padding: 0px;
+		width:94%;
+		margin:0% 3%;
+	}
+	
+	.column3 {
+		width: 94%;
+		margin: 0 3%;
+	}
+	
+	div .utilities-left{
+		width:100%;
+	}
+	div .utilities-right{
+		display: none;
+	}
+	
+	h1{
+		font-size: 12px;
+	}
+	
+	#hero h2{
+	line-height: 250px;
+	color: #da8908;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+	
+	#openingHours{
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.columnOpeningHours {
+		width: 90%;
+		padding: 0% auto;
+    }
+	
+		
+	.columnOpeningHours p {
+		display: none;
+	}
+	
+	
+	
+	.slider {
+		display:none;
+	}
+	
+	iframe{
+		height:250px;
+		width: 80%;
+	}
+	
+	.bodyText{
+		padding: 0px;
+	}
+
+
+}
+
+/*MEDIA Q FOR HAMBURGER*/
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }

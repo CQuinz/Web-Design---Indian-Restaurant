@@ -8,7 +8,7 @@ $( document ).ready(function() {
     var $slider = $('.slider'); // class or id of carousel slider
     var $slide = 'li'; // could also use 'img' if you're not using a ul
     var $transition_time = 1000; // 1 second
-    var $time_between_slides = 4000; // 4 seconds
+    var $time_between_slides = 5000; // 4 seconds
   
     function slides(){
       return $slider.find($slide);
@@ -35,14 +35,19 @@ $( document ).ready(function() {
       }
       , $transition_time +  $time_between_slides 
     );
+    
+    
+})
   
-  });
+  
   
   // JQUERY SCRIPT FOR RESERVATION FORM
   //source:(http://www.w3schools.com/howto/howto_css_modals.asp)
   
   
   // Get the modal
+  
+  
   var modal = document.getElementById('myModal');
   
   // Get the button that opens the modal
@@ -51,24 +56,38 @@ $( document ).ready(function() {
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
   
+  var submitRes = document.getElementById("submitReservation");
+  
   // When the user clicks on the button, open the modal 
   btn.onclick = function() {
       modal.style.display = "block";
-  }
+      //$('.slider').slider.pause;
+  };
   
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
       modal.style.display = "none";
-  }
+  };
+  
+  //when user clicks submit reservation close the window
+  submitRes.onclick = function() {
+      modal.style.display= "none";
+  };
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";
       }
-  }
+  };
+  
+  
+  
+  
   
 });
+
+// VALIDATION FUNCTION
 
 function validation(){
 	var name,email,phone, message;
@@ -105,4 +124,14 @@ function validation(){
 
 	document.getElementById("messageBox").innerHTML = message;
 }
+  
 
+//HAMBURGER MENU BUTTON - Responsive Design
+ function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
